@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EECB41341F787FF2009AA4B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB41331F787FF2009AA4B1 /* AppDelegate.swift */; };
-		EECB41361F787FF2009AA4B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB41351F787FF2009AA4B1 /* ViewController.swift */; };
+		EECB41361F787FF2009AA4B1 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB41351F787FF2009AA4B1 /* GoalsVC.swift */; };
 		EECB41391F787FF2009AA4B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB41371F787FF2009AA4B1 /* Main.storyboard */; };
 		EECB413C1F787FF2009AA4B1 /* GoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECB413A1F787FF2009AA4B1 /* GoalPost.xcdatamodeld */; };
 		EECB413E1F787FF2009AA4B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECB413D1F787FF2009AA4B1 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		EECB41301F787FF2009AA4B1 /* GoalPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECB41331F787FF2009AA4B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EECB41351F787FF2009AA4B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EECB41351F787FF2009AA4B1 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		EECB41381F787FF2009AA4B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EECB413B1F787FF2009AA4B1 /* GoalPost.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoalPost.xcdatamodel; sourceTree = "<group>"; };
 		EECB413D1F787FF2009AA4B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,8 +56,11 @@
 		EECB41321F787FF2009AA4B1 /* GoalPost */ = {
 			isa = PBXGroup;
 			children = (
+				EECB414C1F788165009AA4B1 /* Extensions */,
+				EECB414B1F78815F009AA4B1 /* Enums */,
+				EECB41491F7880EB009AA4B1 /* View */,
+				EECB41481F7880E2009AA4B1 /* Controller */,
 				EECB41331F787FF2009AA4B1 /* AppDelegate.swift */,
-				EECB41351F787FF2009AA4B1 /* ViewController.swift */,
 				EECB41371F787FF2009AA4B1 /* Main.storyboard */,
 				EECB413D1F787FF2009AA4B1 /* Assets.xcassets */,
 				EECB413F1F787FF2009AA4B1 /* LaunchScreen.storyboard */,
@@ -65,6 +68,35 @@
 				EECB413A1F787FF2009AA4B1 /* GoalPost.xcdatamodeld */,
 			);
 			path = GoalPost;
+			sourceTree = "<group>";
+		};
+		EECB41481F7880E2009AA4B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EECB41351F787FF2009AA4B1 /* GoalsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EECB41491F7880EB009AA4B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EECB414B1F78815F009AA4B1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		EECB414C1F788165009AA4B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EECB41361F787FF2009AA4B1 /* ViewController.swift in Sources */,
+				EECB41361F787FF2009AA4B1 /* GoalsVC.swift in Sources */,
 				EECB41341F787FF2009AA4B1 /* AppDelegate.swift in Sources */,
 				EECB413C1F787FF2009AA4B1 /* GoalPost.xcdatamodeld in Sources */,
 			);
