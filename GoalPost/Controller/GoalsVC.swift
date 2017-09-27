@@ -8,15 +8,17 @@
 
 import UIKit
 import CoreData
+import GoogleMobileAds
 
 let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
-class GoalsVC: UIViewController {
+class GoalsVC: UIViewController, GADBannerViewDelegate {
 	
 	// Outlets
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var undoView: UIView!
 	@IBOutlet weak var undoBtn: UIButton!
+	@IBOutlet weak var bannerView: GADBannerView!
 	
 	// Variables
 	var goals: [Goal] = []
@@ -28,6 +30,11 @@ class GoalsVC: UIViewController {
 		tableView.isHidden = false
 		undoView.alpha = 0.0
 		undoBtn.isHidden = true
+		
+		bannerView.adUnitID = "ca-app-pub-1608201447124825/7435799524"
+		bannerView.rootViewController = self
+		bannerView.load(GADRequest())
+		bannerView.delegate = self
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -180,32 +187,3 @@ extension GoalsVC {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

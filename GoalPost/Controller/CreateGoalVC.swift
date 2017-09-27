@@ -55,5 +55,4 @@ class CreateGoalVC: UIViewController, UITextViewDelegate {
 		goalTextView.text = ""
 		goalTextView.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 	}
-	
 }

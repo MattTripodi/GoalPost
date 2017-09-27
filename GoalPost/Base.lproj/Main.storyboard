@@ -82,7 +82,7 @@
                                 </subviews>
                             </stackView>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RZd-HB-rAR">
-                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="goalCell" rowHeight="70" id="bDo-yi-oye" customClass="GoalCell" customModule="GoalPost" customModuleProvider="target">
@@ -216,6 +216,13 @@
                                     <action selector="undoBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jtD-m4-3th"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ad-EV-Wcd" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="70" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wXC-eU-1cc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -225,18 +232,22 @@
                             <constraint firstItem="RZd-HB-rAR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8bQ-Wc-a9b"/>
                             <constraint firstItem="RZd-HB-rAR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BP7-bb-PgD"/>
                             <constraint firstItem="1pw-R9-L1w" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BdD-ar-yev"/>
-                            <constraint firstItem="RZd-HB-rAR" firstAttribute="top" secondItem="1pw-R9-L1w" secondAttribute="bottom" id="EB6-AZ-Nmh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xNT-Z8-dr4" secondAttribute="bottom" id="FTW-in-M98"/>
+                            <constraint firstItem="8ad-EV-Wcd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GN3-ZD-JDO"/>
                             <constraint firstItem="1pw-R9-L1w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ige-Cw-k7i"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fp7-cA-SrJ" secondAttribute="trailing" constant="15" id="NGO-cT-EzZ"/>
                             <constraint firstItem="ShA-ZR-sdr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WX1-HB-4Dk"/>
+                            <constraint firstItem="RZd-HB-rAR" firstAttribute="top" secondItem="8ad-EV-Wcd" secondAttribute="bottom" id="XKC-re-4to"/>
+                            <constraint firstItem="8ad-EV-Wcd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aYf-LN-PXB"/>
                             <constraint firstItem="1pw-R9-L1w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b6i-gj-Txq"/>
+                            <constraint firstItem="8ad-EV-Wcd" firstAttribute="top" secondItem="1pw-R9-L1w" secondAttribute="bottom" id="cMG-ln-UnC"/>
                             <constraint firstItem="ShA-ZR-sdr" firstAttribute="top" secondItem="1pw-R9-L1w" secondAttribute="bottom" constant="75" id="v94-2g-LZe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xNT-Z8-dr4" secondAttribute="trailing" id="wU9-ct-xns"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="8ad-EV-Wcd" id="4cF-Tx-9ee"/>
                         <outlet property="tableView" destination="RZd-HB-rAR" id="iZs-d9-XSl"/>
                         <outlet property="undoBtn" destination="fp7-cA-SrJ" id="W5e-yO-lYb"/>
                         <outlet property="undoView" destination="xNT-Z8-dr4" id="vyb-Zo-9M0"/>
